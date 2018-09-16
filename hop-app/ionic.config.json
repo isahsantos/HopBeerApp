@@ -1,0 +1,7 @@
+{
+  "name": "Hop App",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
