@@ -15,4 +15,5 @@ export class HomePage {
 cadastro() : void {
   this.navCtrl.push('CadastroPage');
 }
+
 }
