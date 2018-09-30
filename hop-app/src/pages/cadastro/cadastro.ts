@@ -1,6 +1,11 @@
+import { AngularFireDatabase } from 'angularfire2/database';
+import { LoginPage } from './../login/login';
 import { SignupPage } from './../signup/signup';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
+
+import { RegisterPage } from '../register/register';
 /**
  * Generated class for the CadastroPage page.
  *
@@ -21,9 +26,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class CadastroPage {
 
   onSignup() : void {
-    this.navCtrl.push(SignupPage);
+    this.navCtrl.push(LoginPage);
   }
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+  onRegister() : void {
+    this.navCtrl.push(SignupPage);
   }
 
   ionViewDidLoad() {

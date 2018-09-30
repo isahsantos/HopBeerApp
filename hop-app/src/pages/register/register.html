@@ -1,0 +1,48 @@
+<ion-header class="c">
+
+  <ion-navbar>
+    <ion-title>Cadastro</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-content padding>
+        <h1 text-center>
+          <ion-icon class="auth-icon" name="person-add" color="secondary"></ion-icon> Bem vindo ao Hop CLUB !!
+        </h1>
+
+        <form  [formGroup]="registerForm" (ngSubmit)="onSubmit(); $event.preventDefault()"  >
+          <ion-item>
+            <ion-icon name="person" item-left></ion-icon>
+            <ion-input type="text" placeholder="Nome" formControlName="name"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-icon name="at" item-left></ion-icon>
+              <ion-input type="text" placeholder="Username" formControlName="user"></ion-input>
+            </ion-item>
+          <ion-item>
+            <ion-icon name="mail" item-left></ion-icon>
+            <ion-input type="text" placeholder="E-mail" formControlName="email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="lock" item-left></ion-icon>
+            <ion-input type="text" placeholder="Senha" formControlName="senha"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="phone-portrait" item-left></ion-icon>
+            <ion-input type="text" placeholder="Celular" formControlName="celular"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-icon name="pizza" item-left></ion-icon>
+              <ion-input type="text" placeholder="Produto Preferido" formControlName="product"></ion-input>
+            </ion-item>
+      <br>
+      <button ion-button color="secondary" round type="submit" [disabled]="registerForm.invalid">Cadastrar</button>
+        </form>
+
+
+
+</ion-content>

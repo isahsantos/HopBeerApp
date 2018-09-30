@@ -1,22 +1,51 @@
-<ion-header>
-  <ion-navbar>
+<ion-header color="dark">
+    <ion-toolbar color="danger">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+    <ion-title>HOP CASTLE BEER</ion-title>
+</ion-toolbar>
 </ion-header>
 
+
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
-  <button ion-button secondary (click)="cadastro()"> HOP Club </button>
-
-
-
+  <ion-card class="cards-bg">
+    <img classe="image" src="assets/imgs/hopclub.jpg" />
+    <ion-card-content>
+      <ion-card-title class="text">
+        HOP CLUB BEER
+      </ion-card-title>
+      <p class="text">
+        Ganhe vantagens e descontos exclusivos em nosso restaurante!
+        Aproveite um cardapio especial com preço promocional!
+      </p>
+      <button ion-button color="danger" (click)="hopclub()" round>Saber mais</button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="cards-bg">
+    <img classe="image" src="assets/imgs/cuponsapp.jpg" />
+    <ion-card-content>
+      <ion-card-title class="text">
+        HOP CUPONS
+      </ion-card-title>
+      <p class="text">
+      Aproveite cupons  de desconto para diversos pratos e chopps, os cupons são exclusivos para
+      usuários do Hop app.
+      </p>
+      <button ion-button color="danger" (click)="hopcupon()" round>Obter Cupons </button>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="cards-bg">
+    <img classe="image" src="assets/imgs/hopclub3.jpg" />
+    <ion-card-content>
+      <ion-card-title class="text">
+        HOP CLUB BEER
+      </ion-card-title>
+      <p class="text">
+        Ganhe vantagens e descontos exclusivos em nosso restaurante!
+        Aproveite um cardapio especial com preço promocional!
+      </p>
+      <button ion-button color="danger" (click)="hopclub()" round>Saber mais</button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

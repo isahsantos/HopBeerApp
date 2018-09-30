@@ -44,6 +44,6 @@
         <ion-input type="text" placeholder="Produto Preferido" formControlName="product"></ion-input>
       </ion-item>
 <br>
-<button ion-button color="secondary" round type="submit" [disabled]="signupForm.invalid">Cadastrar</button>
+<button ion-button color="secondary"  (click)="onSubmit()" round type="submit" [disabled]="signupForm.invalid">Cadastrar</button>
   </form>
 </ion-content>

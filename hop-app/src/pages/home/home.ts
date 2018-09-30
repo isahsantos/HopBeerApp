@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, IonicPage } from 'ionic-angular';
+import { CuponsPage } from '../cupons/cupons';
 
 @IonicPage({})
 @Component({
@@ -12,8 +13,11 @@ export class HomePage {
 
   }
 
-cadastro() : void {
+hopclub() : void {
   this.navCtrl.push('CadastroPage');
 }
+hopcupon():void {
+  this.navCtrl.push(CuponsPage);
+ }
 
 }
